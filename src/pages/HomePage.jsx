@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div>    
-        <MovieList />
-      
+    <div className='bg-dark'>    
+        <MovieList />   
     </div>
   )
 }

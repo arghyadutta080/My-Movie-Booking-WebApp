@@ -9,9 +9,9 @@ const MovieItems = ({ info }) => {
                 <div className="w-auto m-4 rounded-1">
                     <div className="card shadow-sm">
                         <img src={info.show.image === null ? "" : info.show.image.original} alt="No preview available" height="350" width="280" className='rounded-top' />
-                        <div className='bg-dark text-light fw-normal p-1 rounded-bottom d-flex align-items-center border-top-1 border-light'>
+                        <div className='bg-transparent text-dark fw-normal p-1 rounded-bottom d-flex align-items-center border-top-1 border-light'>
                             <BsStarFill className='mx-2' color='green' />
-                            {info.show.rating.average !== null ? info.show.rating.average : "Not rated yet"}
+                            {info.show.rating.average !== null ? `${info.show.rating.average}/10` : "Not rated yet"}
                         </div>
                     </div>
                     <div className='py-4 px-2'>
